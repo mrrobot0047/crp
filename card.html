@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+
+    <table class="market-table">
+        <thead class="table-head">
+            <tr class="table-row table-title">
+                <th class="table-heading"></th>
+                <th class="table-heading" scope="col">#</th>
+                <th class="table-heading" scope="col">Name</th>
+                <th class="table-heading" scope="col">Last Price</th>
+                <th class="table-heading" scope="col">24h %</th>
+                <th class="table-heading" scope="col">Market Cap</th>
+                <th class="table-heading" scope="col">Last 7 Days</th>
+                <th class="table-heading"></th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <!-- Table rows with data -->
+        </tbody>
+    </table>
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+            <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+                <span class="blue-text">Track all markets on TradingView</span>
+            </a>
+        </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+            "width": "100%",
+            "height": 550,
+            "defaultColumn": "overview",
+            "screener_type": "crypto_mkt",
+            "displayCurrency": "USD",
+            "colorTheme": "dark",
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+</body>
+</html>
